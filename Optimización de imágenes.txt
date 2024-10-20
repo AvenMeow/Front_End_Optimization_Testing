@@ -1,0 +1,8 @@
+1. Utiliza herramientas en línea como TinyPNG (https://tinypng.com) o Squoosh (https://squoosh.app) para comprimir las imágenes a WebP
+imagen.webp (Microsoft Edge HTML Document (.webp))
+
+2. Ajusta el tamaño de las imágenes a la resolución del dispositivo deseado, utilizando srcset
+<img src="imagen-pequeña.jpg" srcset="imagen-mediana.jpg 600w, imagen-grande.jpg 1200w" alt="Manzana roja">
+
+3. Incluye los archivos convertidos y redimensionados en tu proyectos
+<img data-src="imagen-pre.webp" srcset="imagen-mediana.webp 600w, imagen-grande.webp 1200w"> (Desde el archivo HTML)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyCart - Tu carrito</title>
+    <link rel="stylesheet" href="style_cart.min.css"> <!-- Enlaza el archivo CSS minificado para estilos -->
+    <script defer src="animation_cart.min.js"></script> <!-- Enlaza el archivo JavaScript minificado para interactividad -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-layout">
+            <a href="Index.html" id="Logo">
+                <img data-src="logo.webp" srcset="logo.webp 600w, logo.webp 1200w, logo.webp 2000w" loading="lazy"> <!-- Lazy Loading: Para cargar imágenes o recursos pesados sólo cuando el usuario se desplaza hacia ellos, en lugar de cargarlos inmediatamente al abrir la página -->
+            </a>
+            <h1>HappyCart: fill your cart, fill your day</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Items.html">All our products</a></li>
+                <li><a href="Cart.html">Your happy cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página del Carrito -->
+    <main>
+        <!-- Contenedor -->
+        <div id="cart-container"></div>
+        <div id="empty-cart-message" style="display: none;">Tu carrito está vacío.</div>
+
+        <!-- Total a Pagar -->
+        <div id="total-container">
+            <h3>Total a pagar:</h3>
+            <p id="total">$0</p>
+            <button type="submit">Pagar</button>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 HappyCart. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100087617270742"><img data-src="facebook.webp" srcset="facebook.webp 600w, facebook.webp 1200w, facebook.webp 2000w" loading="lazy"></a> <!-- API de Intersección (data-src): Para reducir el tamaño de imagen y mejorar la carga de los archivos enviados al navegador -->
+            <a href="#"><img data-src="x.webp" srcset="x.webp 600w, x.webp 1200w, x.webp 2000w" loading="lazy"></a> <!-- Imagen WebP: Para imágenes que quieres comprimir sin perder su calidad utilizando formatos más eficientes -->
+            <a href="https://www.threads.net/@my26maicol?xmt=AQGzttFlD7j3MRIhze0mOmGUQfZ_5J-pPxDCXUt5W7pHtQQ"><img data-src="instagram.webp" srcset="instagram.webp 600w, instagram.webp 1200w, instagram.webp 2000w" loading="lazy"></a> <!-- Atributo srcset: Para definir diferentes versiones de la imagen para que el navegador elija la más adecuada al cargar -->
+        </div>
+    </footer>
+</body>
+</html>
+
